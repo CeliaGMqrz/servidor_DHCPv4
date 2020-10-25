@@ -30,7 +30,7 @@ De esta forma podemos aprovechar un rango de direcciones IP que sea algo limitad
 
 ÍNDICE
 
-* Tarea 1: [Proceso de configuración de los clientes]()
+* Tarea 1: [Funcionamiento del servidor DCHP]()
 * Tarea 2: [Preparación del escenario. Fichero Vagrantfile]()
 * Tarea 3: [Configuración del servidor DCHP. Lista de concesiones y configuración del cliente DCHP.]()
 * Tarea 4: [Configuración del servidor: Router NAT]()
