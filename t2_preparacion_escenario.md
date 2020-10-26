@@ -126,3 +126,5 @@ En ambas máquinas:
 apt-get update
 apt-get upgrade
 ```
+
+* Seguir la guía: [Configuración del servidor y el cliente. Lista de concesiones.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t3_configuracion_servidor_y_cliente_dchp.md)

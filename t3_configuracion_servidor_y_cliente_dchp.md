@@ -246,3 +246,4 @@ root@nodolan1:/home/vagrant#
 ```
 * Comprobamos que ha tomado la dirección ip adecuada **192.168.200.51**, en el rango de direcciones que habiamos indicado en el servidor.
 
+![ip address](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/salida_ipa.png)
