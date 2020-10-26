@@ -139,7 +139,7 @@ subnet 192.168.200.0 netmask 255.255.255.0 {
 
 Explicación:
 
-Usaremos el direccionamiento 192.168.200.0/24. En el rancho desde 192.1668.200.50 al 70. El dns lo tendremos configurado con la dirección ip de nuestro servidor con el nombre de "s01_local". Con la puerta de enlace del router de 192.168.200.1. El tiempo de concesión no será mayor a 12 horas. Pondremos 12 horas por defecto y de máximo.
+Usaremos el direccionamiento 192.168.200.0/24. En el rango desde 192.168.200.50 al 70. El dns lo tendremos configurado con la dirección ip de nuestro servidor con el nombre de "s01_local". Con la puerta de enlace del router de 192.168.200.1. El tiempo de concesión no será mayor a 12 horas. Pondremos 12 horas por defecto y de máximo.
 
 * Guardamos y reiniciamos el servicio
 
