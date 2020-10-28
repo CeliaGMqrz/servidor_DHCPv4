@@ -5,24 +5,14 @@
 
 **Tarea 4**: Configura el servidor para que funcione como **router** y **NAT**, de esta forma los clientes tengan internet. Muestra las rutas por defecto del servidor y el cliente. Realiza una prueba de funcionamiento para comprobar que el cliente tiene acceso a internet (utiliza nombres, para comprobar que tiene resolución DNS).
 
-El escenario tiene dos máquinas:
-
-* **servidor**, que está conectada a una red pública y a una red privada. La interfaz de red en la red privada se configura con la IP **192.168.200.2**
-
-* **nodolan1**: Esta máquina está conectada a la misma red privada que la máquina anterior, en este caso su direccionamiento es **192.168.200.50** (Este direccionamiento lo toma desde el servidor dhcp)
-
-* La máquina servidor debe acceder a internet por eth1. eth0 sólo se utiliza para acceder a la máquina con vagrant ssh.
-
-* La máquina cliente debe tener acceso a internet. Para ello debe salir por **eth1** y la máquina router debe estar configurada para enrutar las peticiones de cliente. del mismo modo, eth0 sólo se utiliza para acceder con vagrant ssh.
-
-
 ## 1. ESCENARIO
 
-Vamos a crear las dos máquinas necesarias, ambas con debian buster.
+El escenario tiene dos máquinas virtuales:
 
-* El nodo1 será nuestro router(servidor dhcp). Tendrá una interfaz pública que actuará de eth0 (nat) por virtualbox, una interfaz privada que será para nuestra red interna con el cliente y nuestra interfaz puente que se crea por defecto cuando lanzamos la máquina por vagrant. (Esta última no hace falta especificarla.)
+* **servidor**, que está conectada a una red pública y a una red privada. La interfaz de red en la red privada se configura con la IP **192.168.200.2**.La máquina servidor debe acceder a internet por eth1. eth0 sólo se utiliza para acceder a la máquina con vagrant ssh.
 
-* El nodo2 será nuestro cliente. Tendrá una interfaz privada para la red interna (por la que se conectará a internet a través de nuestro router), y  una red pública que se proporciona automaticamente con vagrant a través de nuestra interfaz física.
+* **nodolan1**: Esta máquina está conectada a la misma red privada que la máquina anterior, en este caso su direccionamiento es **192.168.200.50** (Este direccionamiento lo toma desde el servidor dhcp). La máquina cliente debe tener acceso a internet. Para ello debe salir por **eth1** y la máquina router debe estar configurada para enrutar las peticiones de cliente. del mismo modo, eth0 sólo se utiliza para acceder con vagrant ssh.
+
 
 ![escenario.jpeg](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/escenario.jpeg)
 
@@ -60,10 +50,10 @@ default via 192.168.100.1 dev eth1
 
 **PASO 2: Activar el bit de fordward**
 
-* Para que nuestra máquina actúe como router tenemos que activar el bit de fordward. Podemos hacerlo temporal o permanente. En este caso lo haremos permanente. Para ello editamos el fichero /etc/sysctl.conf , buscamos la línea ‘net.ipv4.ip_fordward=’1 y la descomentamos.
+* Para que nuestra máquina actúe como router tenemos que activar el **bit de fordward**. Podemos hacerlo temporal o permanente. En este caso lo haremos permanente. Para ello editamos el fichero /etc/sysctl.conf , buscamos la línea ‘net.ipv4.ip_fordward=’1 y la descomentamos.
 
 ```sh
-# nano /etc/sysctl.conf 
+nano /etc/sysctl.conf 
 ```
 
 ```sh
