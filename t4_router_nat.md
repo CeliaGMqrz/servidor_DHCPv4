@@ -1,7 +1,7 @@
 
 # Crear router-nat con Vagrant
 
-![escenario.jpeg]()
+![escenario.jpeg](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/escenario.jpeg)
 
 ## Objetivo:
 
