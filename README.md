@@ -30,8 +30,8 @@ De esta forma podemos aprovechar un rango de direcciones IP que sea algo limitad
 
 * Tarea 1: [Funcionamiento del servidor DCHP](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t1_funcionamiento.md)
 * Tarea 2: [Preparación del escenario. Fichero Vagrantfile](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t2_preparacion_escenario.md)
-* Tarea 3: [Configuración del servidor y el cliente. Lista de concesiones.]()
-* Tarea 4: [Configuración del servidor: Router NAT]()
+* Tarea 3: [Configuración del servidor y el cliente. Lista de concesiones.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t3_configuracion_servidor_y_cliente_dchp.md)
+* Tarea 4: [Configuración del servidor: Router NAT](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t4_router_nat.md)
 * Tarea 5: []()
 * Tarea 6: []()
 * Tarea 7: []()

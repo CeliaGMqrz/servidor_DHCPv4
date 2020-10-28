@@ -28,6 +28,44 @@ Vamos a crear las dos máquinas necesarias, ambas con debian buster.
 
 ## 2. CONFIGURAR SERVIDOR DHCP COMO ROUTER
 
+**PASO 1: Cambiar ruta por defecto**
+
+* Primero vamos a ver por donde tenemos acceso a la red. En este caso vemos con **ip r** que tenemos acceso desde 'eth0' y nos interesa que tengamos red desde 'eth1':
+
+```sh
+root@servidor:/home/vagrant# ip r
+default via 10.0.2.2 dev eth0 
+10.0.2.0/24 dev eth0 proto kernel scope link src 10.0.2.15 
+192.168.100.0/24 dev eth1 proto kernel scope link src 192.168.100.156 
+192.168.200.0/24 dev eth2 proto kernel scope link src 192.168.200.2 
+
+```
+
+* Tenemos que cambiar la ruta por defecto para tener acceso por eth1 a la red en vez de eth0.
+
+```sh
+ip route change default via 192.168.100.1 dev eth1
+```
+* Comprobamos que ya se ha modificado la ruta por defecto
+
+```sh 
+root@servidor:/home/vagrant# ip r
+default via 192.168.100.1 dev eth1 
+10.0.2.0/24 dev eth0 proto kernel scope link src 10.0.2.15 
+192.168.100.0/24 dev eth1 proto kernel scope link src 192.168.100.156 
+192.168.200.0/24 dev eth2 proto kernel scope link src 192.168.200.2 
+root@servidor:/home/vagrant# ping -I eth1 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) from 192.168.100.156 eth1: 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=117 time=8.84 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=117 time=9.11 ms
+^C
+--- 8.8.8.8 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 2ms
+rtt min/avg/max/mdev = 8.842/8.976/9.110/0.134 ms
+
+```
+**PASO 2: Activar el bit de fordward**
+
 * Para que nuestra máquina actúe como router tenemos que activar el bit de fordward. Podemos hacerlo temporal o permanente. En este caso lo haremos permanente. Para ello editamos el fichero /etc/sysctl.conf , buscamos la línea ‘net.ipv4.ip_fordward=’1 y la descomentamos.
 
 ```sh
