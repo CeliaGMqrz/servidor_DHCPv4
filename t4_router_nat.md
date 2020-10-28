@@ -9,10 +9,9 @@
 
 El escenario tiene dos máquinas virtuales:
 
-* **servidor**, que está conectada a una red pública y a una red privada. La interfaz de red en la red privada se configura con la IP **192.168.200.2**.La máquina servidor debe acceder a internet por eth1. eth0 sólo se utiliza para acceder a la máquina con vagrant ssh.
+* **servidor**, que está conectada a una red pública y a una red privada. La interfaz de red en la red privada (**eth2**) se configura con la IP **192.168.200.2**. La máquina servidor debe acceder a internet por **eth1** (puente con la anfitriona). La interfaz **eth0** sólo se utiliza para acceder a la máquina con vagrant ssh.
 
-* **nodolan1**: Esta máquina está conectada a la misma red privada que la máquina anterior, en este caso su direccionamiento es **192.168.200.50** (Este direccionamiento lo toma desde el servidor dhcp). La máquina cliente debe tener acceso a internet. Para ello debe salir por **eth1** y la máquina router debe estar configurada para enrutar las peticiones de cliente. del mismo modo, eth0 sólo se utiliza para acceder con vagrant ssh.
-
+* **nodolan1**: Esta máquina está conectada a la misma red privada que la máquina anterior, en este caso su direccionamiento es **192.168.200.50** (Este direccionamiento lo toma desde el servidor dhcp). La máquina cliente debe tener acceso a internet, para ello debe salir por **eth1** y la máquina router debe estar configurada para enrutar las peticiones de cliente. del mismo modo, eth0 sólo se utiliza para acceder con vagrant ssh.
 
 ![escenario.jpeg](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/escenario.jpeg)
 
