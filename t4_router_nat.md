@@ -54,16 +54,10 @@ default via 192.168.100.1 dev eth1
 10.0.2.0/24 dev eth0 proto kernel scope link src 10.0.2.15 
 192.168.100.0/24 dev eth1 proto kernel scope link src 192.168.100.156 
 192.168.200.0/24 dev eth2 proto kernel scope link src 192.168.200.2 
-root@servidor:/home/vagrant# ping -I eth1 8.8.8.8
-PING 8.8.8.8 (8.8.8.8) from 192.168.100.156 eth1: 56(84) bytes of data.
-64 bytes from 8.8.8.8: icmp_seq=1 ttl=117 time=8.84 ms
-64 bytes from 8.8.8.8: icmp_seq=2 ttl=117 time=9.11 ms
-^C
---- 8.8.8.8 ping statistics ---
-2 packets transmitted, 2 received, 0% packet loss, time 2ms
-rtt min/avg/max/mdev = 8.842/8.976/9.110/0.134 ms
 
 ```
+![ping01.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/ping01.png)
+
 **PASO 2: Activar el bit de fordward**
 
 * Para que nuestra máquina actúe como router tenemos que activar el bit de fordward. Podemos hacerlo temporal o permanente. En este caso lo haremos permanente. Para ello editamos el fichero /etc/sysctl.conf , buscamos la línea ‘net.ipv4.ip_fordward=’1 y la descomentamos.
@@ -221,25 +215,8 @@ root@nodolan1:/home/vagrant# ip a
 
 * Ahora ya podemos ver si tenemos acceso a la red desde el cliente por la interfaz eth1, y efectivamente está en buen funcionamiento nuestro router nat y el cliente configurado adecuadamente.
 
-```sh
-root@nodolan1:/home/vagrant# ping 8.8.8.8
-PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
-64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=9.15 ms
-64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=9.45 ms
-^C
---- 8.8.8.8 ping statistics ---
-2 packets transmitted, 2 received, 0% packet loss, time 85ms
-rtt min/avg/max/mdev = 9.152/9.299/9.447/0.176 ms
-root@nodolan1:/home/vagrant# ping -I eth1 8.8.8.8
-PING 8.8.8.8 (8.8.8.8) from 192.168.200.50 eth1: 56(84) bytes of data.
-64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=9.40 ms
-64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=9.91 ms
-^C
---- 8.8.8.8 ping statistics ---
-2 packets transmitted, 2 received, 0% packet loss, time 42ms
-rtt min/avg/max/mdev = 9.397/9.651/9.905/0.254 ms
+![ping0.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/ping0.png)
 
-```
 
 ### **Resolucion de nombres** 
 
@@ -254,26 +231,5 @@ nameserver 8.8.8.8
 
 * Comprobaciones: 
 
-```sh
-root@nodolan1:/home/vagrant# ping www.google.es
-PING www.google.es (216.58.211.35) 56(84) bytes of data.
-64 bytes from muc03s14-in-f35.1e100.net (216.58.211.35): icmp_seq=1 ttl=116 time=9.91 ms
-64 bytes from muc03s14-in-f35.1e100.net (216.58.211.35): icmp_seq=2 ttl=116 time=10.3 ms
-^C
---- www.google.es ping statistics ---
-2 packets transmitted, 2 received, 0% packet loss, time 48ms
-rtt min/avg/max/mdev = 9.906/10.082/10.258/0.176 ms
-
-```
-
-```sh
-root@nodolan1:/home/vagrant# ping www.youtube.es
-PING youtube-ui.l.google.com (216.58.211.238) 56(84) bytes of data.
-64 bytes from mad01s24-in-f238.1e100.net (216.58.211.238): icmp_seq=1 ttl=116 time=10.1 ms
-64 bytes from mad01s24-in-f238.1e100.net (216.58.211.238): icmp_seq=2 ttl=116 time=10.3 ms
-^C
---- youtube-ui.l.google.com ping statistics ---
-2 packets transmitted, 2 received, 0% packet loss, time 4ms
-rtt min/avg/max/mdev = 10.098/10.197/10.296/0.099 ms
-
-```
+![ping1.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/ping1.png)
+![ping2.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/ping2.png)
