@@ -222,3 +222,5 @@ nameserver 8.8.8.8
 
 ![ping1.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/ping1.png)
 ![ping2.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/ping2.png)
+
+Seguir la guía en : [tcpdump]()
