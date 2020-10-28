@@ -25,6 +25,5 @@ root@servidor:/home/vagrant# tcpdump -D
 
 * Queremos escuchar **eth1** que es donde se produce la redireccion de paquetes desde **eth2**. Necesitamos la opción -n para ver los puertos.
 
-* REQUEST
 
-![tcpdump1.png]()
+![tcpdump1.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/tcpdump1.png)
