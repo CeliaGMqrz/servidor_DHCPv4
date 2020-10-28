@@ -82,6 +82,10 @@ net.ipv4.ip_forward=1
 
 ### FICHERO INTERFACES
 
+```sh
+nano /etc/network/interfaces
+```
+
 #### REGLAS DE IP TABLE
 
 ```sh
