@@ -22,7 +22,7 @@ El escenario tiene dos máquinas:
 
 Vamos a crear las dos máquinas necesarias, ambas con debian buster.
 
-* El nodo1 será nuestro router. Tendrá una interfaz pública que actuará de eth0 (nat) por virtualbox, una interfaz privada que será para nuestra red interna con el cliente y nuestra interfaz puente que se crea por defecto cuando lanzamos la máquina por vagrant. (Esta última no hace falta especificarla.)
+* El nodo1 será nuestro router(servidor dhcp). Tendrá una interfaz pública que actuará de eth0 (nat) por virtualbox, una interfaz privada que será para nuestra red interna con el cliente y nuestra interfaz puente que se crea por defecto cuando lanzamos la máquina por vagrant. (Esta última no hace falta especificarla.)
 
 * El nodo2 será nuestro cliente. Tendrá una interfaz privada para la red interna (por la que se conectará a internet a través de nuestro router), y  una red pública que se proporciona automaticamente con vagrant a través de nuestra interfaz física.
 

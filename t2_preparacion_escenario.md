@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
   config.vm.define :nodo2 do |nodo2|
     nodo2.vm.box = "debian/buster64"
     nodo2.vm.hostname = "nodolan1"
-    nodo2.vm.network :private_network, ip: "192.168.200.3",
+    nodo2.vm.network "private_network",
       virtualbox__intnet: "red_local"
   end
 end
@@ -67,7 +67,7 @@ vagrant@servidor:~$ ip a
 
 ```
 
-* Mostramos las direcciones de nuestro cliente:
+* Mostramos las direcciones de nuestro cliente: (previamente hemos configurado una dirección estática para nuestro cliente "192.168.200.3")
 
 ```sh
 vagrant@nodolan1:~$ ip a
