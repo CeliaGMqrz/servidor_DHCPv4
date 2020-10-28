@@ -92,10 +92,10 @@ iface eth2 inet static
       dns-nameservers 8.8.8.8    
 ```
 
-* Reiniciamos el servicio 
+* Reiniciamos la máquina virtual, ya que si reiniciamos el servicio perdemos la conexión por ssh a nuestra máquina.
 
 ```sh
-systemctl restart networking
+reboot
 ```
 
 * Ahora vamos a editar el fichero de configuracion isc-dhcp-server:
@@ -247,3 +247,5 @@ root@nodolan1:/home/vagrant#
 * Comprobamos que ha tomado la dirección ip adecuada **192.168.200.51**, en el rango de direcciones que habiamos indicado en el servidor.
 
 ![ip address](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/salida_ipa.png)
+
+Seguir la guía con [router nat](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t4_router_nat.md)
