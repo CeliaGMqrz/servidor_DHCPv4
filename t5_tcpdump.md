@@ -27,3 +27,5 @@ root@servidor:/home/vagrant# tcpdump -D
 
 
 ![tcpdump1.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/tcpdump1.png)
+
+Seguir la guía en : [Funcionamiento de dhcp]()
