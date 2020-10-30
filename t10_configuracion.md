@@ -152,7 +152,7 @@ iface eth1 inet dhcp
 
 * Vemos como ha tomado el direccionamiento correcto **192.168.30.50**
 
-![nodlan2ipa.png]()
+![nodlan2ipa.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/nodolan2ipa.png)
 
 ### Fichero **resolv.conf**
 
