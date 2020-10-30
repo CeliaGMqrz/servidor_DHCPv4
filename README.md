@@ -28,13 +28,13 @@ De esta forma podemos aprovechar un rango de direcciones IP que sea algo limitad
 
 ÍNDICE
 
-* Tarea 1: [Funcionamiento del servidor DCHP](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t1_funcionamiento.md)
-* Tarea 2: [Preparación del escenario. Fichero Vagrantfile](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t2_preparacion_escenario.md)
+* Tarea 1: [Funcionamiento del servidor DCHP.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t1_funcionamiento.md)
+* Tarea 2: [Preparación del escenario. Fichero Vagrantfile.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t2_preparacion_escenario.md)
 * Tarea 3: [Configuración del servidor y el cliente. Lista de concesiones.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t3_configuracion_servidor_y_cliente_dchp.md)
-* Tarea 4: [Configuración del servidor: Router NAT](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t4_router_nat.md)
-* Tarea 5: [Tcpdump](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t5_tcpdump.md)
-* Tarea 6 y 7: [Funcionamiento DHCP](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t6_funcionamiento_dchp.md)
-* Tarea 8: [Reservas](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t8_reservas.md)
+* Tarea 4: [Configuración del servidor: Router NAT.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t4_router_nat.md)
+* Tarea 5: [Tcpdump. Captura de paquetes.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t5_tcpdump.md)
+* Tarea 6 y 7: [Funcionamiento DHCP.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t6_funcionamiento_dchp.md)
+* Tarea 8: [Reservas.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t8_reservas.md)
 * Tarea 9: []()
 * Tarea 10: []()
 * Tarea 11: []()
