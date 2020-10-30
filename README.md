@@ -48,6 +48,5 @@ Configura el servidor dhcp en el ordenador “servidor” para que de servicio a
 NOTA: He cambiado el direccionamiento 192.168.200.0 a 192.168.30.0, ya que en la red local anterior habiamos puesto esa misma.
 
 
-* Tarea 9: [Fichero Vagrantfile]()
-* Tarea 10: []()
-* Tarea 11: []()
+* Tarea 9: [Fichero Vagrantfile](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t9_vagrantfile.md)
+* Tarea 10 y 11: [Configuración Clientes y Servidor. Comprobaciones.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t10_configuracion.md)
