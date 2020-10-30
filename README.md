@@ -35,6 +35,19 @@ De esta forma podemos aprovechar un rango de direcciones IP que sea algo limitad
 * Tarea 5: [Tcpdump. Captura de paquetes.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t5_tcpdump.md)
 * Tarea 6 y 7: [Funcionamiento DHCP.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t6_funcionamiento_dchp.md)
 * Tarea 8: [Reservas.](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t8_reservas.md)
-* Tarea 9: []()
+
+#### Uso de varios ámbitos. Nuevo escenario
+
+Modifica el escenario Vagrant para añadir una nueva red local y un nuevo nodo:
+
+* Servidor: En el servidor hay que crear una nueva interfaz
+* nodo_lan2: Un cliente conectado a la segunda red local.
+
+Configura el servidor dhcp en el ordenador “servidor” para que de servicio a los ordenadores de la nueva red local, teniendo en cuenta que el tiempo de concesión sea **24 horas** y que la red local tiene el direccionamiento **192.168.30.0/24**. 
+
+NOTA: He cambiado el direccionamiento 192.168.200.0 a 192.168.30.0, ya que en la red local anterior habiamos puesto esa misma.
+
+
+* Tarea 9: [Fichero Vagrantfile]()
 * Tarea 10: []()
 * Tarea 11: []()
