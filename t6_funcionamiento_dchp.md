@@ -4,11 +4,11 @@
 
 * Hemos agregado un cliente windows a la red local
 
-![win1.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/win1.png)
+![win1.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/w1.png)
 
 * Comprobamos que el cliente windows tiene una dirección ip dada por el servidor DHCP y tiene acceso a internet, ya que nuestro servidor actúa tambien como router nat.
 
-![clientewin.png]()
+![clientewin.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/clientewin.png)
 
  
 ## Tarea 6 : Los clientes toman una configuración, y a continuación apagamos el servidor dhcp. ¿qué ocurre con el cliente windows? ¿Y con el cliente linux?
