@@ -56,3 +56,6 @@ root@servidor:/home/vagrant# /etc/init.d/isc-dhcp-server restart
 
 
 ![rangowindows.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/rangowindows.png)
+
+
+Seguir con [Reservas](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t8_reservas.md)

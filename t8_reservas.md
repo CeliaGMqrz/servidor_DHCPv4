@@ -23,7 +23,7 @@ root@servidor:/home/vagrant# /etc/init.d/isc-dhcp-server restart
 
 * Vamos a comprobar en la máquina cliente que ha adoptado esta dirección
 
-![reservalinux.png]()
+![reservalinux.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/reservalinux.png)
 
 * Lo hacemos con windows y además comprobamos que tenemos internet
 
@@ -34,5 +34,5 @@ host cliente_win {
 }
 ```
 
-![reservawin.png]()
+![reservawin.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/reservawin.png)
 
