@@ -36,3 +36,5 @@ Vagrant.configure("2") do |config|
 end
   
 ```
+
+seguir en [configuracion](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/t10_configuracion.md)
