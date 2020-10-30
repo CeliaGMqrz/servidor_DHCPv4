@@ -181,14 +181,14 @@ root@nodolan2:/home/vagrant# ip route change default via 192.168.30.2 dev eth1
 
 * Servidor DCHP
 
-![conexion_pns.png]()
+![conexion_pns.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/conexion_pns.png)
 
 * Nodolan1
 
-![conexion_pn1.png]()
+![conexion_pn1.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/conexion_pn1.png)
 
 * Nodolan2
 
-![nodolan2ping.png]()
+![nodolan2ping.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/nodolan2ping.png)
 
 
