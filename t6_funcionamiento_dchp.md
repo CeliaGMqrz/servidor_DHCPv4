@@ -20,7 +20,7 @@
 ![t62.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/t62.png)
 
 
-* Si reinciamos ambas máquinas e intentamos hacer una peticion *DHCPDIISCOVER* comprobamos que no obtenemos la dirección ip desde dchp puesto que nuestro servidor está apagado. 
+* Si reinciamos ambas máquinas e intentamos hacer una peticion *DHCPDISCOVER* comprobamos que no obtenemos la dirección ip desde dchp puesto que nuestro servidor está apagado. 
 
 * En windows toma una dirección aleatoria
 
@@ -48,9 +48,11 @@ root@servidor:/home/vagrant# /etc/init.d/isc-dhcp-server restart
 
 * Vemos que cambia en nuestros clientes:
 
-Cliente Debian10 
+* Cliente Debian toma la direccion **192.168.200.80** 
 
 ![rangolinux.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/rangolinux.png)
 
-Cliente Windows
+* Cliente Windows toma la direccion **192.168.200.81** 
+
+
 ![rangowindows.png](https://github.com/CeliaGMqrz/servidor_DHCPv4/blob/main/capturas/rangowindows.png)
